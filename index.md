@@ -1,37 +1,7 @@
-## Welcome to GitHub Pages
+## Automated backup databases via Samba service
 
-You can use the [editor on GitHub](https://github.com/vixfree/arhbases/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/vixfree/arhbases/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+The script does the archive every day, every week and removes the daily, monthly - removes the daily and weekly. It is possible to forcibly cause both weekly and monthly backups. All parameters are set with the comments at the beginning of the script. In the script connects to a network drive, Windows / Linux service through samba copy these directories into a temporary directory, and then compresses them with these files names (linked to the names database directory) with the addition of the current backup date.
+The script has the "entrance" - it is you connect the network drive, you must also go to some special catalog and then you can copy the database directory. This happens for example if the database location as a different resource and on ways to "input".
 
 ### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+stvixfree@gmail.com
